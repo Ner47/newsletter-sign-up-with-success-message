@@ -1,0 +1,10 @@
+# Ignore artifacts
+build
+dist
+coverage
+
+# Ignore dependencies
+node_modules
+
+# Ignore specific files
+package-lock.json
