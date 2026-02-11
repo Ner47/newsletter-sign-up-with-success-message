@@ -4,14 +4,31 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  src: url('./shared/assets/fonts/Roboto-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 700;
+  src: url('./shared/assets/fonts/Roboto-Bold.ttf') format('ttf');
+}
+
 :root {
+  --red: hsl(4, 100%, 67%);
+
+  --blue-800: hsl(234, 29%, 20%);
+  --blue-700: hsl(235, 18%, 26%);
+  --grey: hsl(0, 0%, 58%);
   --white: hsl(0, 0%, 100%);
+
   font-family:
-    'Outfit',
+    'Roboto',
     system-ui,
     -apple-system,
     Segoe UI,
-    Roboto,
     Arial,
     sans-serif;
 }
