@@ -1,0 +1,27 @@
+.button {
+  background-color: var(--blue-800);
+  color: var(--white);
+  padding: 20px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+
+  margin: 0;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.button:focus-visible {
+  outline: 3px solid color-mix(in oklab, var(--blue-800), white 35%);
+  outline-offset: 3px;
+}
+
+.button:hover {
+  background-image: linear-gradient(to right, var(--pink), var(--red));
+}
+
+.button:active {
+  transform: translateY(3px);
+}

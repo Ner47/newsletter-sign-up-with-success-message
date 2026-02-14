@@ -1,0 +1,18 @@
+.form__label {
+  font-weight: 700;
+  font-size: 0.8rem;
+
+  display: block;
+  margin: 0 0 5px;
+}
+
+.form__input {
+  width: 100%;
+  padding: 20px;
+  font-size: 1rem;
+  border: 1px solid var(--grey);
+  border-radius: 10px;
+  background: var(--white);
+
+  margin: 0 0 20px;
+}

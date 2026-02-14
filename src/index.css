@@ -18,6 +18,7 @@
 
 :root {
   --red: hsl(4, 100%, 67%);
+  --pink: hsl(345.78deg 100% 66.08%);
 
   --blue-800: hsl(234, 29%, 20%);
   --blue-700: hsl(235, 18%, 26%);
@@ -31,6 +32,8 @@
     Segoe UI,
     Arial,
     sans-serif;
+  font-size: 16px;
+  color: var(--blue-800);
 }
 
 body {
