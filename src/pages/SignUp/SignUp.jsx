@@ -29,7 +29,7 @@ export function SignUp() {
             And much more!
           </li>
         </ul>
-        <Form navTo="/" />
+        <Form navTo="/success" />
       </div>
       <picture>
         <source srcSet={illustrationSignUpDesktop} media="(min-width: 1024px)" />

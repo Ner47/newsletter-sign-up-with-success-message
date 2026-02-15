@@ -2,8 +2,14 @@
   font-weight: 700;
   font-size: 0.8rem;
 
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0 0 5px;
+}
+
+.form__error {
+  color: var(--red);
 }
 
 .form__input {
@@ -15,4 +21,22 @@
   background: var(--white);
 
   margin: 0 0 20px;
+}
+
+.form__input_error::placeholder,
+.form__input_error {
+  color: var(--red);
+  border-color: var(--red);
+  background-color: color-mix(in oklab, var(--red), white 85%);
+}
+
+.form__input_error:focus-visible {
+  outline: 2px solid color-mix(in oklab, var(--red), white 35%);
+}
+
+.form__input_valid {
+  color: var(--green);
+  border-color: var(--green);
+  background-color: color-mix(in oklab, var(--green), white 85%);
+  outline: none;
 }
