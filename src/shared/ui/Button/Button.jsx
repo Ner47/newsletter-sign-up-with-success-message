@@ -1,8 +1,8 @@
 import styles from './Button.module.css';
 
-export function Button({ children, type, onDismiss }) {
+export function Button({ children, type, onClick, ...props }) {
   return (
-    <button onClick={onDismiss} className={styles.button} type={type}>
+    <button onClick={onClick} className={styles.button} type={type} {...props}>
       {children}
     </button>
   );

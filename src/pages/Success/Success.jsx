@@ -1,21 +1,21 @@
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { iconSuccess } from '../../shared/assets';
 import { Button } from '../../shared/ui';
 import styles from './Success.module.css';
-import { useState } from 'react';
+import { useEffect } from 'react';
 
 export function Success() {
-  const [isVisible, SetVisible] = useState(true);
+  const navigate = useNavigate();
   const location = useLocation();
-  const email = location.state;
+  const email = location.state?.email;
+
+  useEffect(() => {
+    if (!email) navigate('/');
+  }, [email, navigate]);
 
   const handleClose = () => {
-    SetVisible(false);
+    navigate('/');
   };
-
-  if (!isVisible) {
-    return null;
-  }
 
   return (
     <article className={styles.success}>
@@ -28,7 +28,9 @@ export function Success() {
           button inside to confirm your subscription.
         </p>
       </div>
-      <Button onDismiss={handleClose}>Dismiss message</Button>
+      <Button type="button" onClick={handleClose}>
+        Dismiss message
+      </Button>
     </article>
   );
 }

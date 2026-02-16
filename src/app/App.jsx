@@ -1,10 +1,10 @@
 import { Route, Routes } from 'react-router-dom';
-import stales from './App.module.css';
+import styles from './App.module.css';
 import { NotFound, SignUp, Success } from '../pages';
 
 function App() {
   return (
-    <main className={stales.page}>
+    <main className={styles.page}>
       <Routes>
         <Route path="/" element={<SignUp />} />
         <Route path="/success" element={<Success />} />

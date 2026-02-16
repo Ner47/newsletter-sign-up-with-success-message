@@ -2,9 +2,9 @@ import {
   illustrationSignUpDesktop,
   illustrationSignUpMobile,
   illustrationSignUpTablet,
+  iconList,
 } from '../../shared/assets';
 import styles from './SignUp.module.css';
-import { iconList } from '../../shared/assets';
 import { Form } from '../../feature/form';
 
 export function SignUp() {
